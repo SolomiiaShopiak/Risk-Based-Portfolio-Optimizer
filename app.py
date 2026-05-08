@@ -1,10 +1,10 @@
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+
 from src.preprocessing import *
 from src.portfolio_model import *
 from src.optimizer import *
-
-from src.preprocessing import load_price_data, clean_price_data, calculate_returns
-from src.portfolio_model import calculate_statistics, simulate_portfolios, add_sharpe_ratio
-from src.optimizer import get_portfolio_for_risk_profile
 
 
 st.set_page_config(
